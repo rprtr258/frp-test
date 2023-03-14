@@ -8,4 +8,4 @@ FROM alpine:3
 WORKDIR /frp
 COPY --from=build /build/frpc .
 COPY frpc.ini .
-ENTRYPOINT ["./frp", "-c", "./frpc.ini"]
+ENTRYPOINT ["./frpc", "-c", "./frpc.ini"]
